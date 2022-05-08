@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Frais_Forfait">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/logolebon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Frais au Forfait"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date d'aujourd'hui:"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/dateActu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type:" />
+
+            <Spinner
+                android:id="@+id/listeForfait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/TypeForfait" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id:"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/idFrais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantité:" />
+
+            <EditText
+                android:id="@+id/txtQte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:numeric="integer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="94dp"
+                android:text="DatedelaDépense:" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:baselineAlignBottom="false"
+                android:longClickable="false"
+                android:onClick="ShowCal"
+                android:scaleType="centerInside"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                <TextView
+                    android:id="@+id/datefrais"
+                    android:layout_width="198dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textColor="#F44336" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAjouter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:onClick="MonClick"
+                android:text="Ajouter" />
+
+
+            <Button
+                android:id="@+id/retour2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#84B946"
+                android:onClick="clique_retour"
+                android:text="Retour" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/logolebon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="107dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:text="Connexion"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <TextView
+                android:id="@+id/codeVisiteur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="CodeVisiteur"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <EditText
+                android:id="@+id/MotdePasse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Mot de Passe"
+                android:textSize="24sp"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <Button
+                android:id="@+id/btnAutentifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:onClick="MonClick"
+                android:text="Authentifier" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
